@@ -57,7 +57,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 to-purple-800 p-4 mt-8">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 absolute inset-0 bg-[url('https://www.dsu.edu.in/images/Admission/admission_page_img.jpg')] bg-cover bg-center p-4 mt-8">
       <div className="flex flex-col md:flex-row w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl">
         {/* Left Side - Image with Overlay */}
         <div className="w-full md:w-3/5 relative bg-black">

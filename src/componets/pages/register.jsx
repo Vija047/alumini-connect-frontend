@@ -90,10 +90,10 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 to-purple-800 p-4 mt-15">
-      <div className="flex flex-col md:flex-row w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 absolute inset-0 bg-[url('https://www.dsu.edu.in/images/Admission/admission_page_img.jpg')] bg-cover bg-center p-4 mt-15">
+      <div className="flex flex-col md:flex-row w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl mt-30 ">
         {/* Left Side - Image with Overlay */}
-        <div className="hidden md:block md:w-1/2 relative bg-black">
+        <div className="hidden md:block md:w-1/2 relative bg-blac k">
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-[url('https://www.dsu.edu.in/images/Admission/admission_page_img.jpg')] bg-cover bg-center"></div>
           
