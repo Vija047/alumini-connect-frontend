@@ -159,13 +159,13 @@ const DashboardLayout = () => {
         const token = localStorage.getItem("token");
 
         const [userRes, alumniRes, postsRes] = await Promise.all([
-          axios.get("http://localhost:7000/api/users/profile", {
+          axios.get("https://alumini-connect-backend.vercel.app/api/users/profile", {
             headers: { Authorization: `Bearer ${token}` },
           }),
 
-          axios.get("http://localhost:7000/api/users/directory"),
+          axios.get("https://alumini-connect-backend.vercel.app/api/users/directory"),
 
-          axios.get("http://localhost:7000/api/posts/allpost", {
+          axios.get("https://alumini-connect-backend.vercel.app/api/posts/allpost", {
             headers: { Authorization: `Bearer ${token}` },
           }),
         ]);

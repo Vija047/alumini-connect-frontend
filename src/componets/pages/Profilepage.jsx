@@ -19,7 +19,7 @@ export default function ProfilePage() {
       try {
         setIsLoading(true);
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:7000/api/users/profile", {
+        const response = await axios.get("https://alumini-connect-backend.vercel.app/api/users/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -44,7 +44,7 @@ export default function ProfilePage() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        "http://localhost:7000/api/users/update-profile",
+        "https://alumini-connect-backend.vercel.app/api/users/update-profile",
         formState,
         {
           headers: {

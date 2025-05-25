@@ -31,7 +31,7 @@ const AchievementsFeed = () => {
             }
 
             try {
-                const res = await fetch(`http://localhost:7000/api/users/${userId}`, {
+                const res = await fetch(`https://alumini-connect-backend.vercel.app/api/users/${userId}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -76,7 +76,7 @@ const AchievementsFeed = () => {
         const newAchievement = { title, description, date };
 
         try {
-            const res = await fetch('http://localhost:7000/api/achievements/add', {
+            const res = await fetch('https://alumini-connect-backend.vercel.app/api/achievements/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

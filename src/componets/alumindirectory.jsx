@@ -18,7 +18,7 @@ const AlumniDirectory = () => {
   useEffect(() => {
     const fetchAlumni = async () => {
       try {
-        const res = await fetch('http://localhost:7000/api/users/directory');
+        const res = await fetch('https://alumini-connect-backend.vercel.app/api/users/directory');
         const data = await res.json();
         setAlumni(data);
       } catch (err) {

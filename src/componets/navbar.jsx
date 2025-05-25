@@ -17,7 +17,7 @@ const Navbar = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:7000/api/users/profile', {
+        const response = await fetch('https://alumini-connect-backend.vercel.app/api/users/profile', {
           headers: {
             'Authorization': `Bearer ${token}`,
           },

@@ -65,7 +65,7 @@ const RegisterPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:7000/api/auth/register",
+        "https://alumini-connect-backend.vercel.app/api/auth/register",
         {
           name: formData.name,
           email: formData.email,

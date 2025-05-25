@@ -37,7 +37,7 @@ const CommunityFeed = () => {
       }
 
       try {
-        const res = await fetch(`http://localhost:7000/api/messages/${userId}`, {
+        const res = await fetch(`https://alumini-connect-backend.vercel.app/api/messages/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -148,7 +148,7 @@ const CommunityFeed = () => {
     const newPost = { content: postText, tags };
 
     try {
-      const res = await fetch('http://localhost:7000/api/messages/send', {
+      const res = await fetch('https://alumini-connect-backend.vercel.app/api/messages/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
